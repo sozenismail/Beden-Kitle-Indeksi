@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_light"
+    tools:context=".Hesapla">
+
+
+    <EditText
+        android:id="@+id/editTextBoy"
+        android:layout_width="260dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="32dp"
+
+        android:background="@color/colorWhite"
+        android:drawableLeft="@drawable/ic_beenhere_black_24dp"
+        android:drawablePadding="5dp"
+        android:ems="10"
+
+        android:hint="Boy (m)"
+        android:inputType="textPersonName|number"
+        android:lines="1"
+        android:paddingLeft="4dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray"
+        android:textColorLink="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editTextKilo"
+        android:layout_width="260dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="44dp"
+        android:background="@color/colorWhite"
+        android:drawableLeft="@drawable/ic_beenhere_black_24dp"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="Kilonuzu giriniz."
+        android:inputType="textPersonName|number"
+        android:lines="1"
+        android:paddingLeft="4dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray"
+        android:textColorLink="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextBoy" />
+
+
+    <Button
+        android:id="@+id/buttonSonuc"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="88dp"
+        android:background="@color/colorWhite"
+        android:text="Hesapla"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextKilo" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="160dp"
+        android:layout_height="146dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="serif-monospace"
+        android:text="YAŞAM"
+        android:textColor="@color/colorWhite"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+</android.support.constraint.ConstraintLayout>
